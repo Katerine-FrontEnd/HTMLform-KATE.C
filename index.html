@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/70e3cf106d.js" crossorigin="anonymous"></script>
+  </head>
+<body>
+
+    <div class="card mx-4 my-4">
+        <div class="card-header">
+            <div><h2>Payment</h2></div>
+        </div>
+        <div class="card-body d-flex">
+            <form class="row g-3">
+              
+                <div class="alert alert-danger " role="alert">
+                    Some fields are missing
+                  </div>
+            
+                <div class="col-md-4">
+                  <label for="validationDefault01" class="form-label">Card #</label>
+                  <input type="text" class="form-control" placeholder="XXXXXXXXXXXXXXXX" id="validationDefault01" value="" required>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationDefault02" class="form-label">CVC #</label>
+                  <input type="text" class="form-control" id="validationDefault02" placeholder="0000" value="" required>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationDefaultUsername" class="form-label">Amount</label>
+                  <div class="input-group">
+                    <p><b>$</b></p>
+                    <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Amount" aria-describedby="inputGroupPrepend2" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationDefault03" class="form-label">First Name</label>
+                  <input type="text" class="form-control" id="validationDefault03" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="validationDefault03" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="validationDefault03" required>
+                  </div>
+            
+                  <div class="col-md-6">
+                    <label for="validationDefault03" class="form-label">City</label>
+                    <input type="text" class="form-control" id="validationDefault03" required>
+                  </div>
+            
+                <div class="col-md-3">
+                  <label for="validationDefault04" class="form-label">State</label>
+                  <select class="form-select" id="validationDefault04" required>
+                    <option selected disabled value="">Pick a state</option>
+                    <option>Uruguay</option>
+                    <option>Brasil</option>
+                    <option>Argentina</option>
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationDefault05" class="form-label">Postal code</label>
+                  <input type="text" class="form-control" id="validationDefault05" required>
+                </div>
+                
+            
+                <!-- tarjetas -->
+              <div class="d-flex flex-column col-6">
+                <p>We accept:</p>
+
+
+                <div class="bg-secondary px-2 rounded-1" style="width: 284px">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-mastercard fa-xl text-light"></i></label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-visa fa-lg text-light"></i></label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-diners-club fa-lg text-light"></i></label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-amex fa-lg text-light"></i></label>
+                </div>
+              </div>
+
+          
+              <!-- TEXT AREA -->
+            </div>
+              <div class="mb-3 col-6">
+                  <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  <p class="text-body-secondary">Add any notes here.</p>
+                </div>
+              
+            </div>
+
+
+
+        <div class="card-footer d-flex justify-content-end">
+            <button type="button" class="btn btn-secondary mx-1">Cancel</button>
+            <button type="button" class="btn btn-primary">Send</button>
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
